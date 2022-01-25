@@ -15,7 +15,7 @@ var server = require('./server');
 global.sinon = sinon;
 global.chai = chai;
 
-chai.Assertion.includeStack = true;
+chai.config.includeStack = true;
 chai.use(require('sinon-chai'));
 
 var PORT = 10808;
